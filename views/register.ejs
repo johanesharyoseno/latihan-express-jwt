@@ -1,0 +1,19 @@
+<html>
+    <form method="post" action="/register">
+        <% if(typeof error!= 'undefined') {%> <p><%= error %></p><%}%>
+        <label for="username">Username</label>
+        <br>
+        <input required type="text" name="username" placeholder="masukkan username anda"> </input>
+
+        <br>
+
+        <label for="password">Password</label>
+        <br>
+        <input type="password" name="password" placeholder="masukkan password anda"> </input>
+
+        <br>
+
+        <button type="submit">Register</button>
+
+    </form>
+</html>
